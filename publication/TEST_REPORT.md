@@ -19,13 +19,17 @@ TensorRT 11.2.1.2, PyTorch 2.7.1+cu128
 - [x] Dosya yükleme: 1,5 MB MP4 tarayıcıdan yüklendi ve FP16 ile işlendi.
 - [x] Kaynak değişimi: tamamlanmış video çıktısı webcam moduna geçerken temizlendi.
 - [x] WebRTC bileşeni: `START` ve `SELECT DEVICE` kontrolleri görüntülendi.
+- [x] WebRTC başlatma: FP16 engine yüklendi ve bileşen `START` durumundan `STOP`
+  durumuna geçti; uygulama tarafında istisna oluşmadı.
 - [x] Yayın JSON dosyaları geçerli JSON olarak ayrıştırıldı.
 - [x] GitHub Pages sayfasındaki göreli dosya bağlantılarının hedefleri mevcut.
 - [x] Git sahneleme denetiminde boşluk hatası bulunmadı.
 
 ## Kullanıcı onayı/harici hesap gerektiren testler
 
-- [ ] Tarayıcı kamera izni verilerek gerçek webcam akışı doğrulanacak.
+- [ ] Fiziksel kamera paylaşabilen Chrome/Edge üzerinde gerçek webcam karesi ve
+  tespit çıktısı doğrulanacak. Codex uygulama içi tarayıcısı medya aygıtı
+  sunmadığından bu oturumda görüntü akışı alınamadı.
 - [ ] Herkese açık GitHub deposu oluşturulup ilk push yapılacak.
 - [ ] GitHub Pages adresi açıldıktan sonra mobil/masaüstü görünümü doğrulanacak.
 - [ ] GitHub release sonrasında Zenodo DOI kaydı doğrulanacak.
