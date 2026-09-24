@@ -40,4 +40,4 @@ TensorRT 11.2.1.2, PyTorch 2.7.1+cu128
 TensorRT engine dosyaları Git'e eklenmez ve hedef NVIDIA GPU'da yeniden
 oluşturulur. Temiz kopyada PyTorch ağırlığı `python src/prepare_models.py --base`
 komutuyla veya uygulamanın ilk açılışında indirilir. GitHub Pages sayfası statiktir;
-GPU çıkarımı çalıştırmaz, deney sonuçlarını ve demo bağlantısını sunar.
+GPU çıkarımı çalıştırmaz; deney sonuçlarını ve açık kaynak kod bağlantısını sunar.

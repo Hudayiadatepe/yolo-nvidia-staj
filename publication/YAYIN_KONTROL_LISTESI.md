@@ -8,7 +8,7 @@
 - [x] Makale için anonim Türkçe taslak hazırlandı.
 - [x] Ücretsiz GitHub Pages tanıtım sayfası hazırlandı (`docs/`).
 - [x] Resmî 2026 CDEJ Word şablonu indirildi ve eski, yanlış adlandırılmış şablon işaretlendi.
-- [x] Mevcut 4. hafta demo videosu tanıtım sayfasına bağlandı.
+- [x] Eski 4. hafta demo videosu tanıtım sayfasından kaldırıldı.
 - [x] Temiz kurulum/model hazırlama komutları ve yayın öncesi test raporu hazırlandı.
 
 ## GitHub için
@@ -39,6 +39,5 @@
 ## Tamamlamak için yazardan gereken bilgiler
 
 - Staj yapılan kurum ve tarih aralığı
-- Demo videosunun kesin kaynak/lisans bilgisi veya yazarın kendi kaydı olduğuna dair doğrulama
 
 > DOI ancak Zenodo kaydı yayımlandığında kesinleşir. Gönderim ve yayımlama işlemleri kullanıcı hesabı üzerinden yapılmalı; danışman kontrolünden önce dergiye gönderilmemelidir.
