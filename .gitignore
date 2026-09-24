@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local datasets and generated validation runs
+data/coco_val/
+runs/
+
+# Uploaded and generated videos
+data/_uploaded.*
+data/_processed_output.*
+
+# Temporary files
+*.tmp
+~$*.docx
+streamlit-test.*.log
+streamlit-live.*.log
+cloudflared-live.*.log
+tools/cloudflared.exe
+
+# Document QA renders
+article/template/qa_*/
+
+# TensorRT engines are machine/GPU/runtime specific
+models/*.engine
+
+# Downloadable/exported model artifacts are rebuilt locally
+models/*.pt
+models/*.onnx
+
+# Third-party or source-license-unverified demo media
+bus.jpg
+data/test_videos/
+results/annotated_video/
+
+# Superseded exploratory outputs; publication_* files remain versioned
+results/week*
+results/Claude outputs/
+
+# Kept locally only for provenance; this file belongs to a different journal
+article/template/CDEJ_resmi_sablon.docx

@@ -1,0 +1,126 @@
+{
+  "input": "C:\\Users\\huday\\OneDrive\\Desktop\\Yeni klas\u00f6r\\yolo-nvidia-staj\\article\\template\\CDEJ_template_TR_official_2026.docx",
+  "fonts_by_char_count": {
+    "Cambria": 22393,
+    "Georgia": 1
+  },
+  "direct_run_formatting_runs": 110,
+  "direct_paragraph_formatting_paragraphs": 141,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 22,
+      "text": "I. G\u0130R\u0130\u015e",
+      "style": "normal"
+    },
+    {
+      "para_index": 28,
+      "text": "II. KAVRAMSAL ARKA PLAN",
+      "style": "normal"
+    },
+    {
+      "para_index": 35,
+      "text": "III. Y\u00d6NTEM",
+      "style": "normal"
+    },
+    {
+      "para_index": 40,
+      "text": "IV. BULGULAR VE SENTEZ",
+      "style": "normal"
+    },
+    {
+      "para_index": 48,
+      "text": " V. B\u00dcT\u00dcNLE\u015eT\u0130R\u0130C\u0130 \u00c7ER\u00c7EVE",
+      "style": "normal"
+    },
+    {
+      "para_index": 54,
+      "text": " VI. Y\u00d6NETSEL \u00c7IKARIMLAR",
+      "style": "normal"
+    },
+    {
+      "para_index": 61,
+      "text": "VII. TARTIR\u015eMA",
+      "style": "normal"
+    },
+    {
+      "para_index": 69,
+      "text": "VIII. SINIRLILIKLAR",
+      "style": "normal"
+    },
+    {
+      "para_index": 76,
+      "text": "IX. SONU\u00c7",
+      "style": "normal"
+    },
+    {
+      "para_index": 87,
+      "text": "BEYANLAR",
+      "style": "normal"
+    },
+    {
+      "para_index": 96,
+      "text": "KAYNAKLAR",
+      "style": "normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "",
+        "style": "normal"
+      },
+      {
+        "para_index": 2,
+        "text": " ",
+        "style": "Title"
+      },
+      {
+        "para_index": 3,
+        "text": "",
+        "style": "normal"
+      },
+      {
+        "para_index": 4,
+        "text": "",
+        "style": "normal"
+      },
+      {
+        "para_index": 5,
+        "text": "",
+        "style": "normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 2,
+        "run_text": " ",
+        "style": "Title"
+      },
+      {
+        "para_index": 18,
+        "run_text": "Dijital \u0130\u015f Y\u00f6netiminde Siber Dayan\u0131kl\u0131l\u0131k Yetkinliklerinin Dinamik Yetenekler Pe",
+        "style": "Heading 1"
+      },
+      {
+        "para_index": 21,
+        "run_text": "Murat \u015eahin",
+        "style": "normal"
+      },
+      {
+        "para_index": 21,
+        "run_text": "1*",
+        "style": "normal"
+      },
+      {
+        "para_index": 22,
+        "run_text": "I. ",
+        "style": "normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

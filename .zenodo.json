@@ -1,0 +1,22 @@
+{
+  "title": "TensorVision: YOLOv8n için NVIDIA TensorRT Performans Analizi",
+  "upload_type": "software",
+  "license": "AGPL-3.0-only",
+  "description": "YOLOv8n modelinin PyTorch FP32 ve NVIDIA TensorRT FP32, FP16 ve INT8 çalışma biçimlerini hız, doğruluk, model boyutu ve GPU bellek kullanımı bakımından karşılaştıran araştırma yazılımı ve deney çıktıları.",
+  "creators": [
+    {
+      "name": "Adatepe, Hüdayi Hamza",
+      "affiliation": "Düzce Üniversitesi, Bilgisayar Mühendisliği Bölümü",
+      "orcid": "0009-0005-2389-3061"
+    }
+  ],
+  "keywords": [
+    "YOLOv8n",
+    "TensorRT",
+    "object detection",
+    "mixed precision",
+    "smart surveillance",
+    "edge AI"
+  ],
+  "access_right": "open"
+}

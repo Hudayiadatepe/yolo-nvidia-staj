@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="YOLOv8n için PyTorch ve NVIDIA TensorRT FP32, FP16, INT8 performans karşılaştırması.">
+  <title>TensorVision — YOLOv8n TensorRT Performans Analizi</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="hero">
+    <nav><a class="brand" href="#">TensorVision</a><a href="#sonuclar">Sonuçlar</a><a href="#yontem">Yöntem</a><a href="#demo">Demo</a></nav>
+    <div class="hero-copy">
+      <p class="eyebrow">Uç Yapay Zekâ · Akıllı Gözetim · Tekrarlanabilir Deney</p>
+      <h1>YOLOv8n çıkarımında<br><span>hız–doğruluk dengesi</span></h1>
+      <p>PyTorch FP32 ile NVIDIA TensorRT FP32, FP16 ve INT8 sürümlerinin RTX 5060 Laptop GPU üzerinde deneysel karşılaştırması.</p>
+      <div class="actions"><a class="button" href="#sonuclar">Bulguları incele</a><a class="text-link" href="https://drive.google.com/file/d/1jK9x4EjRT7XaHA48VMWzA-UG5TTScC_N/view?usp=drive_link">Demo videosu ↗</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="metrics" aria-label="Öne çıkan sonuçlar">
+      <article><strong>342,52</strong><span>FP16 saf çıkarım FPS</span></article>
+      <article><strong>147,79</strong><span>FP16 video FPS</span></article>
+      <article><strong>3,26×</strong><span>PyTorch'a göre saf hızlanma</span></article>
+      <article><strong>0,3678</strong><span>FP16 COCO mAP50–95</span></article>
+    </section>
+
+    <section id="sonuclar" class="section">
+      <div class="section-heading"><p class="eyebrow">Deneysel bulgular</p><h2>FP16 en dengeli çalışma noktası</h2><p>FP16, temel PyTorch modeline göre saf çıkarımda 3,26 kat ve video hattında 2,01 kat hızlanırken mAP50–95 değerini 0,3681'den 0,3678'e taşıdı. INT8 daha küçük dosya üretmesine rağmen doğruluk kaybı ve FP16'dan düşük hız nedeniyle bu sistemde en iyi seçenek olmadı.</p></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Çalışma biçimi</th><th>Saf FPS</th><th>Video FPS</th><th>mAP50–95</th><th>Boyut</th></tr></thead>
+        <tbody>
+          <tr><td>PyTorch FP32</td><td>105,19 ± 5,89</td><td>73,60 ± 5,06</td><td>0,3681</td><td>6,25 MB</td></tr>
+          <tr><td>TensorRT FP32</td><td>273,90 ± 13,11</td><td>137,66 ± 2,02</td><td>0,3678</td><td>13,14 MB</td></tr>
+          <tr class="highlight"><td>TensorRT FP16</td><td>342,52 ± 20,03</td><td>147,79 ± 3,29</td><td>0,3678</td><td>7,86 MB</td></tr>
+          <tr><td>TensorRT INT8</td><td>306,91 ± 13,11</td><td>142,92 ± 2,68</td><td>0,3272</td><td>6,59 MB</td></tr>
+        </tbody>
+      </table></div>
+      <div class="charts"><figure><img src="assets/fps-comparison.png" alt="Dört çalışma biçiminin saf çıkarım ve video FPS karşılaştırması"><figcaption>Şekil 1. Tekrarlı ölçümlerde FPS karşılaştırması.</figcaption></figure><figure><img src="assets/size-memory-comparison.png" alt="Model boyutu ve GPU bellek kullanımı karşılaştırması"><figcaption>Şekil 2. Dosya boyutu ve GPU bellek kullanımı.</figcaption></figure></div>
+    </section>
+
+    <section id="yontem" class="section method">
+      <div><p class="eyebrow">Yöntem</p><h2>Ölçülebilir ve yeniden üretilebilir</h2></div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Ortam</h3><p>NVIDIA GeForce RTX 5060 Laptop GPU, TensorRT 11.2.1.2, PyTorch 2.7.1 ve CUDA 12.8.</p></article>
+        <article><span>02</span><h3>Hız protokolü</h3><p>640×640 girdi; her sürüm için 10 ısınma, 100 ölçüm ve 10 bağımsız tekrar.</p></article>
+        <article><span>03</span><h3>Doğruluk</h3><p>COCO val2017 veri kümesindeki 5.000 görüntü üzerinde mAP50 ve mAP50–95.</p></article>
+        <article><span>04</span><h3>Kapsam</h3><p>Sonuçlar bu donanım-yazılım bileşimine özgüdür; TensorRT engine dosyaları hedef GPU'da yeniden oluşturulmalıdır.</p></article>
+      </div>
+    </section>
+
+    <section id="demo" class="section demo"><p class="eyebrow">Prototip</p><h2>Gerçek zamanlı uygulama demosu</h2><p>Webcam, video yükleme ve PyTorch/TensorRT çalışma biçimleriyle geliştirilen Streamlit arayüzünün kısa gösterimi.</p><div class="actions"><a class="button" href="https://drive.google.com/file/d/1jK9x4EjRT7XaHA48VMWzA-UG5TTScC_N/view?usp=drive_link">Videoyu Google Drive'da aç ↗</a><a class="text-link" href="https://github.com/HudayiAdatepe/yolo-nvidia-staj">Kaynak kodu görüntüle ↗</a></div></section>
+  </main>
+  <footer><span>© 2026 Hüdayi Hamza Adatepe · AGPL-3.0</span><span>Sonuç tarihi: 24 Eylül 2026</span></footer>
+</body>
+</html>

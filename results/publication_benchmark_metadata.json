@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-24T06:25:03.732371+00:00",
+  "hardware": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "cuda_compute_capability": [
+      12,
+      0
+    ],
+    "driver_version": "616.92"
+  },
+  "software": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "pytorch": "2.7.1+cu128",
+    "cuda_runtime": "12.8",
+    "cudnn": 90701,
+    "tensorrt": "11.2.1.2",
+    "ultralytics": "8.4.127",
+    "opencv": "5.0.0"
+  },
+  "protocol": {
+    "input_size": 640,
+    "warmup_iterations_per_repeat": 10,
+    "timed_iterations_per_repeat": 100,
+    "independent_repeats": 10,
+    "video_loops_per_repeat": 3,
+    "pure_fps_scope": "model.predict on a synthetic 1x3x640x640 CUDA tensor",
+    "video_fps_scope": "video decode plus model inference; annotation rendering excluded"
+  },
+  "video": {
+    "file": "pedestrians_demo.mp4",
+    "sha256": "b21a8e3632453f4b1c6c8d16836d687841f555aa89ac05df72a5a4ef3a495118",
+    "size_bytes": 1529650,
+    "width": 768,
+    "height": 576,
+    "fps": 10.0,
+    "frames": 150,
+    "duration_seconds": 15.0
+  },
+  "variants": [
+    {
+      "label": "PyTorch FP32",
+      "model_file": "yolov8n.pt"
+    },
+    {
+      "label": "TensorRT FP32",
+      "model_file": "yolov8n_fp32.engine"
+    },
+    {
+      "label": "TensorRT FP16",
+      "model_file": "yolov8n_fp16.engine"
+    },
+    {
+      "label": "TensorRT INT8",
+      "model_file": "yolov8n_int8.engine"
+    }
+  ],
+  "result_file": "publication_precision_comparison.json"
+}
