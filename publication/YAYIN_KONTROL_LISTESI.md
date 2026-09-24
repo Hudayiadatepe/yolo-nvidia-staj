@@ -8,7 +8,6 @@
 - [x] Makale için anonim Türkçe taslak hazırlandı.
 - [x] Ücretsiz GitHub Pages tanıtım sayfası hazırlandı (`docs/`).
 - [x] Resmî 2026 CDEJ Word şablonu indirildi ve eski, yanlış adlandırılmış şablon işaretlendi.
-- [x] Eski 4. hafta demo videosu tanıtım sayfasından kaldırıldı.
 - [x] Temiz kurulum/model hazırlama komutları ve yayın öncesi test raporu hazırlandı.
 
 ## GitHub için

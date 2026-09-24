@@ -3,9 +3,6 @@
 Derin Öğrenme Tabanlı Nesne Tespiti Modellerinin (YOLO) NVIDIA Yazılım Bileşenleri
 ile Performans Analizi ve Gerçek Zamanlı Masaüstü Uygulaması Geliştirilmesi.
 
-Detaylı proje bağlamı ve 5 haftalık plan için `CLAUDE.md` dosyasına bakın —
-Claude Code bu dosyayı otomatik okuyarak projeyi anlar.
-
 ## Hızlı Başlangıç
 ```bash
 python -m venv venv
@@ -40,9 +37,7 @@ engine dosyalarını kullanmayın.
 - `models/` — model ağırlıkları (pretrained, ONNX, TensorRT engine)
 - `data/` — veri seti / test videoları
 - `results/` — kıyaslama sonuçları, grafikler
-- `weekly_videos/` — haftalık video teslimlerine dair notlar
-- `notebooks/` — deneysel çalışmalar
-- `docs/` — son hafta planı ve canlıya alma dokümantasyonu
+- `docs/` — canlı tanıtım sayfası ve dağıtım dokümantasyonu
 - `article/` — CDEJ makale hazırlığı ve resmî dergi şablonu
 - `publication/` — GitHub, Zenodo ve CDEJ gönderim kontrol listesi
 
