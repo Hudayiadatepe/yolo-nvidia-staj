@@ -77,6 +77,7 @@ için 0,3681, TensorRT FP16 için 0,3678 olarak ölçülmüştür. Ayrıntılı 
 - Akademik tanıtım sayfası: `docs/index.html`
 - Anonim makale taslağı: `article/manuscript_anonymous_draft.md`
 - Yayın adımları: `publication/YAYIN_KONTROL_LISTESI.md`
+- Doğrulanan testler: `publication/TEST_REPORT.md`
 
 ## Lisans ve Atıf
 

@@ -86,7 +86,7 @@ Bu donanım ve model bileşiminde FP16 en dengeli seçenektir.
 ## Yazar bilgileri
 
 - Hüdayi Hamza Adatepe
-- Düzce Üniversitesi, Bilgisayar Mühendisliği Bölümü
+- Düzce Üniversitesi, Mühendislik Fakültesi, Bilgisayar Mühendisliği Bölümü
 - hudayi224160@ogr.duzce.edu.tr
 - ORCID: 0009-0005-2389-3061
 - GitHub: HudayiAdatepe
