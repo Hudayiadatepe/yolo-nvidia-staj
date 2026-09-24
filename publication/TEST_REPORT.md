@@ -25,13 +25,14 @@ TensorRT 11.2.1.2, PyTorch 2.7.1+cu128
 - [x] GitHub Pages sayfasındaki göreli dosya bağlantılarının hedefleri mevcut.
 - [x] Git sahneleme denetiminde boşluk hatası bulunmadı.
 - [x] Herkese açık GitHub deposu oluşturuldu ve `main` dalı başarıyla gönderildi.
+- [x] GitHub Pages sitesi masaüstü ve 390×844 mobil görünümde doğrulandı;
+  yatay taşma görülmedi ve iki sonuç grafiği eksiksiz yüklendi.
 
 ## Kullanıcı onayı/harici hesap gerektiren testler
 
 - [ ] Fiziksel kamera paylaşabilen Chrome/Edge üzerinde gerçek webcam karesi ve
   tespit çıktısı doğrulanacak. Codex uygulama içi tarayıcısı medya aygıtı
   sunmadığından bu oturumda görüntü akışı alınamadı.
-- [ ] GitHub Pages adresi açıldıktan sonra mobil/masaüstü görünümü doğrulanacak.
 - [ ] GitHub release sonrasında Zenodo DOI kaydı doğrulanacak.
 
 ## Bilinen dağıtım davranışı

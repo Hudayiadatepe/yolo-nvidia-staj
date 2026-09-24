@@ -74,7 +74,7 @@ hızlanma sırasıyla 3,26 ve 2,01 kattır. COCO val2017 mAP50-95 değeri PyTorc
 için 0,3681, TensorRT FP16 için 0,3678 olarak ölçülmüştür. Ayrıntılı ham sonuçlar
 `results/publication_*.json` dosyalarındadır.
 
-- Akademik tanıtım sayfası: `docs/index.html`
+- Akademik tanıtım sayfası: https://hudayiadatepe.github.io/yolo-nvidia-staj/
 - Anonim makale taslağı: `article/manuscript_anonymous_draft.md`
 - Yayın adımları: `publication/YAYIN_KONTROL_LISTESI.md`
 - Doğrulanan testler: `publication/TEST_REPORT.md`
