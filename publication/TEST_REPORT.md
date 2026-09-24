@@ -1,6 +1,6 @@
 # Yayın Öncesi Test Raporu
 
-**Tarih:** 24 Eylül 2026  
+**Tarih:** 24 Eylül 2026<br>
 **Sistem:** Windows 11, NVIDIA GeForce RTX 5060 Laptop GPU, CUDA 12.8,
 TensorRT 11.2.1.2, PyTorch 2.7.1+cu128
 
