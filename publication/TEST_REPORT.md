@@ -24,13 +24,13 @@ TensorRT 11.2.1.2, PyTorch 2.7.1+cu128
 - [x] Yayın JSON dosyaları geçerli JSON olarak ayrıştırıldı.
 - [x] GitHub Pages sayfasındaki göreli dosya bağlantılarının hedefleri mevcut.
 - [x] Git sahneleme denetiminde boşluk hatası bulunmadı.
+- [x] Herkese açık GitHub deposu oluşturuldu ve `main` dalı başarıyla gönderildi.
 
 ## Kullanıcı onayı/harici hesap gerektiren testler
 
 - [ ] Fiziksel kamera paylaşabilen Chrome/Edge üzerinde gerçek webcam karesi ve
   tespit çıktısı doğrulanacak. Codex uygulama içi tarayıcısı medya aygıtı
   sunmadığından bu oturumda görüntü akışı alınamadı.
-- [ ] Herkese açık GitHub deposu oluşturulup ilk push yapılacak.
 - [ ] GitHub Pages adresi açıldıktan sonra mobil/masaüstü görünümü doğrulanacak.
 - [ ] GitHub release sonrasında Zenodo DOI kaydı doğrulanacak.
 
