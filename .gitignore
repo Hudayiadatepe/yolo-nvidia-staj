@@ -34,6 +34,11 @@ tools/cloudflared.exe
 # Document QA renders
 article/template/qa_*/
 
+# Local presentation and rendering artifacts
+.presentation-build/
+.codex-finalizer/
+presentation/
+
 # TensorRT engines are machine/GPU/runtime specific
 models/*.engine
 
